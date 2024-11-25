@@ -1,0 +1,186 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Outfit", "san serif";
+}
+section {
+  margin: 2rem 0;
+}
+
+img {
+  border-radius: 15px;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+  color: hsl(14, 45%, 36%);
+}
+
+header,
+main {
+  margin: 2.5rem auto 2.5rem auto;
+  max-width: 656px;
+}
+
+p,
+li,
+table {
+  color: hsl(30, 10%, 34%);
+}
+.prep {
+  color: hsl(332, 51%, 32%);
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem;
+  border-radius: 15px;
+}
+ul li span,
+ol li span {
+  font-weight: 700;
+}
+
+table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+tr td:nth-last-child(1) {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+td,
+table {
+  margin-top: 1rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  border-collapse: collapse;
+}
+tr td:nth-child(1) {
+  padding-left: 1rem;
+}
+
+td {
+  width: 50%;
+  padding: 0.5rem 0;
+}
+
+.nutrition,
+.instructions {
+  border-top: 2px solid hsl(30, 18%, 87%);
+  margin-top: 1rem;
+}
