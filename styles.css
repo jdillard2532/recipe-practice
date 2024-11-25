@@ -53,6 +53,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   color: hsl(14, 45%, 36%);
+  font-weight: 400;
 }
 
 p {
